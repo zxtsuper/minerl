@@ -1,0 +1,13 @@
+diff --git a/general/chainerrl/baselines/ppo.py b/general/chainerrl/baselines/ppo.py
+index ca58cee..841720c 100644
+--- a/general/chainerrl/baselines/ppo.py
++++ b/general/chainerrl/baselines/ppo.py
+@@ -56,7 +56,7 @@ def main():
+     parser.add_argument('--outdir', type=str, default='results',
+                         help='Directory path to save output files. If it does not exist, it will be created.')
+     parser.add_argument('--seed', type=int, default=0, help='Random seed [0, 2 ** 31)')
+-    parser.add_argument('--gpu', type=int, default=0, help='GPU to use, set to -1 if no GPU.')
++    parser.add_argument('--gpu', type=int, default=-1, help='GPU to use, set to -1 if no GPU.')
+     parser.add_argument('--demo', action='store_true', default=False)
+     parser.add_argument('--load', type=str, default=None)
+     parser.add_argument('--arch', type=str, default='nature', choices=['nature'],
